@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+:root{
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+}
+.header .main{
+    position: relative;
+    background-color: #fff;
+}
+.header .navbar{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.header .navbar .logo{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.header .navbar .menu ul{
+    margin-left: 90px;
+}
+.header .navbar .menu ul li{
+    display: inline-block;
+    margin-right: 38px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.header .navbar .menu ul li{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+}
+.header .navbar .menu ul li a:hover{
+    font-weight: bold;
+    color: crimson;
+    transition: 0.3s ease-in;
+
+}
+.header .contact-info{
+    margin-left: 420px;
+}
+.header .contact-info ul{
+    margin-left: 80px;
+}
+.header .contact-info ul li{
+    display: inline-block;
+}
+.header .contact-info ul li a{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.5s;
+}
+
+.header .contact-info ul li a.sep{
+    margin: 0 10px;
+    opacity: 0.7;
+}
+.myskills .skills_title h1{
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+.bd-grid{
+    margin-right: 1rem;
+    max-width: 1380px;
+    display: grid;
+    margin-left: 1rem
+    
+   
+}
+  
+.skills__container{
+    row-gap: 2rem;
+}
+  
+.skills__subtitle{
+    margin-left: 300px;
+    margin-bottom: .5rem;
+    
+}
+
+
+.frontskill{
+    grid-column: 1;
+}
+
+.skills__text{
+    margin-bottom: 2rem
+}
+  
+.skills__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    border-radius: .5rem;
+    margin-right: 70px
+}
+.skills__data{
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: 300px;
+}
+.subskill2{
+    margin-left: 2px;
+    grid-column: 2;
+}
+.backskill{
+    grid-column: 2;
+}   
+  
+.skills__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: 1rem
+    
+}
+  
+.skills__names{
+    display: flex;
+    align-items: center;
+}
+  
+.skills__bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: 1;
+}
+.backskills__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    border-radius: .5rem;
+    margin-right: 225px
+}
+.backskills__data{
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    margin-left: 80px;
+}
+.backskills__bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: 1;
+}
+.backskills__names{
+    display: flex;
+    align-items: center;
+}
+.backskills__names img{
+    font-size: 2rem;
+    margin-right: 1rem
+}
+.backskills__names img{
+    color: hsl(var(--hue-color), 89%, 60%)
+   
+}
+.backskills__icon{
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-right: 1rem
+    
+}
+  
+  
+.skills__html{
+    width: 80%;
+}
+  
+.skills__css{
+    width: 70%;
+}
+  
+.skills__js{
+    width: 50%;
+}
+.skills__python{
+    width: 60%;
+}
+.skills__C{
+    width: 40%
+}
+.skills__java{
+    width: 30%;
+}
+  
