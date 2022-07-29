@@ -213,6 +213,9 @@ nav ul li a:hover,.active{
         font-size: 20px;
         display: block;
     }
+    #skill_section{
+        padding-top: 3%;
+    }
     .skill-head{
 
         margin-bottom: 50px;
