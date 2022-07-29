@@ -1,221 +1,234 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-:root{
-    --hue-color: 224;
-    --first-color: hsl(var(--hue-color), 89%, 60%);
-}
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-a{
     text-decoration: none;
-}
-ul{
     list-style: none;
 }
-.header{
-    background-color: #fff;
+body{
+    position: relative;
     width: 100%;
     height: 100vh;
+    
 }
-.header .main{
-    position: relative;
-    background-color: #fff;
-}
-.header .navbar{
+nav{
+    background: #fff;
+    height: 80px;
     width: 100%;
-    height: 55px;
     display: flex;
     align-items: center;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: 0 50px 0 60px;
 }
-.header .navbar .logo{
-    color: #fff;
-    font-size: 20px;
-    margin-left: 50px;
+label.logo{
+    color: #1e90ff;
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
 }
-.header .navbar .menu ul{
-    margin-left: 90px;
+nav ul{
+    display: flex;
 }
-.header .navbar .menu ul li{
-    display: inline-block;
-    margin-right: 38px;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+nav ul li{
+    margin: 0 20px;
 }
-.header .navbar .menu ul li{
-    color: #fff;
+nav ul li a{
+    color: #1e90ff;
     font-size: 17px;
     font-weight: 500;
+    font-family: "Poppins",sans-serif;
+    transition: 0.3s ease;
 }
-.header .navbar .menu ul li a:hover{
-    font-weight: bold;
+nav ul li a:hover,.active{
     color: crimson;
-    transition: 0.3s ease-in;
-
 }
-.header .contact-info{
-    margin-left: 420px;
+.menubtn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
 }
-.header .contact-info ul{
-    margin-left: 80px;
+#click{
+    display: none;
 }
-.header .contact-info ul li{
-    display: inline-block;
+#skill_section{
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
 }
-.header .contact-info ul li a{
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.5s;
-}
-
-.header .contact-info ul li a.sep{
-    margin: 0 10px;
-    opacity: 0.7;
-}
-.myskills .skills_title h1{
-    padding-top: 80px;
-    text-align: center;
-    padding-bottom: 70px;
-    font-size: 2rem;
-    font-family: 'Poppins', sans-serif;
-}
-.bd-grid{
-    margin-right: 1rem;
-    max-width: 1380px;
+.skill-head{
+    width: 100%;
+    margin-bottom: 70px;
     display: grid;
-    margin-left: 1rem
-    
-   
+    place-items: center;
+    text-align: center;
 }
-  
-.skills__container{
-    row-gap: 2rem;
+.skill-head h2{
+    margin-bottom: -5px;
+    font-family: "Poppins",sans-serif;
 }
-  
-.skills__subtitle{
-    margin-left: 300px;
-    margin-bottom: .5rem;
-    
-}
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
 
-
-.frontskill{
-    grid-column: 1;
 }
-
-.skills__text{
-    margin-bottom: 2rem
+.skillfont{
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
 }
-  
-.skills__data{
+.skill-main .skill-bar .info{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
+    padding: 0 10px;
+
+}
+.skill-main .skill-bar .info .percent{
+    font-weight: bold;
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 10px;
     position: relative;
-    border-radius: .5rem;
-    margin-right: 70px
+    background-color:rgba(0, 0, 0, 0.199);
+    border-radius: 25px;
+    margin-top: 5px;
 }
-.skills__data{
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    padding: .5rem 1rem;
-    margin-bottom: 2rem;
-    margin-left: 300px;
-}
-.subskill2{
-    margin-left: 2px;
-    grid-column: 2;
-}
-.backskill{
-    grid-column: 2;
-}   
-  
-.skills__icon{
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-right: 1rem
-    
-}
-  
-.skills__names{
-    display: flex;
-    align-items: center;
-}
-  
-.skills__bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: 1;
-}
-.backskills__data{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    position: relative;
-    border-radius: .5rem;
-    margin-right: 225px
-}
-.backskills__data{
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    padding: .5rem 1rem;
-    margin-bottom: 2rem;
-    margin-left: 80px;
-}
-.backskills__bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: 1;
-}
-.backskills__names{
-    display: flex;
-    align-items: center;
-}
-.backskills__names img{
-    font-size: 2rem;
-    margin-right: 1rem
-}
-.backskills__names img{
-    color: hsl(var(--hue-color), 89%, 60%)
-   
-}
-.backskills__icon{
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-right: 1rem
-    
-}
-  
-  
-.skills__html{
-    width: 80%;
-}
-  
-.skills__css{
-    width: 70%;
-}
-  
-.skills__js{
+.skill-bar .bar span{
     width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #1e90ff;
+    border-radius: 25px;
 }
-.skills__python{
+.skill-bar .bar .html{
+    width: 80%;
+    animation: html 3s;
+}
+.skill-bar .bar .css{
+    width: 65%;
+    animation: css 3s;
+}
+.skill-bar .bar .javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+.skill-bar .bar .python{
     width: 60%;
+    animation: python 3s;
 }
-.skills__C{
-    width: 40%
+.skill-bar .bar .C{
+    width: 50%;
+    animation: C 3s;
 }
-.skills__java{
-    width: 30%;
+.skill-bar .bar .java{
+    width: 40%;
+    animation: java 3s;
 }
-  
+@keyframes html {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+}
+}
+@keyframes css {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    
+}  
+}
+@keyframes javascript {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    
+}  
+}
+@keyframes python {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    
+}  
+}
+@keyframes C {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    
+}  
+}
+@keyframes java {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    
+}  
+}
+@media (max-width: 800px){
+    nav .menubtn i{
+        display: block;
+        color: #1e90ff;
+    }
+    #click:checked ~ .menubtn i::before{
+        content: "\f00d";
+    }
+    
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    
+    nav ul li{
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+        display: block;
+    }
+    .skill-head{
+
+        margin-bottom: 50px;
+    }
+    .skill-head h2{
+        font-size: 25px;
+    }
+    .skill-main{
+        display: block;
+        
+    }
+    .skill-main .skill-bar .info{
+        padding-top: 22px;
+    }
+    .skill-bar .bar{
+        margin-top: 2px;
+    }
+
+}
