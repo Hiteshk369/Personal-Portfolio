@@ -4,112 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
+    <script src="https://Kit.fontawesome.com/a076d05399.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-     <div class="header">
-        <div class="navbar">
-            <div class="logo">
-                    <a href="#"></a>
+    <header>
+        <nav>
+            <label class="logo">Portfolio</label>
+            <input type="checkbox" id="click">
+            <label for="click" class="menubtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#"  class="active">Skills</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="skill_section">
+        <div class="skill-head">
+            <h2><u>My Skills</u></h2>
+        </div>
+        <div class="skill-main">
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">HTML</p>
+                    <p class="percent">80%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
             </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="contact.html">ContactMe</a></li>  
-                </ul>
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">CSS</p>
+                    <p class="percent">65%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
             </div>
-            <div class="contact-info">
-                <ul>
-                    <li><a href="#" class="phone-no">+91 9247770353</a></li>
-                    <li><a href="#" class="sep">/</a></li>
-                    <li><a href="#" class="email">parchahiteshkumar123@gmail.com</a></li>
-                </ul>
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">JAVASCRIPT</p>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="bar">
+                    <span class="javascript"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">PYTHON</p>
+                    <p class="percent">60%</p>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">C++</p>
+                    <p class="percent">50%</p>
+                </div>
+                <div class="bar">
+                    <span class="C"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <div class="info">
+                    <p class="skillfont">JAVA</p>
+                    <p class="percent">40%</p>
+                </div>
+                <div class="bar">
+                    <span class="java"></span>
+                </div>
             </div>
         </div>
-        <div class="myskills">
-        <div class="skills_title">
-            <h1><u>Skills</u></h1>
-        </div>
-        <div class="skills__container bd-grid">          
-            <div class="frontskill">
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-html5 skills__icon'></i>
-                        <span class="skills__name">HTML5</span>
-                    </div>
-                <div class="skills__bar skills__html">
-                </div>
-                <div>
-                    <span class="skills__percentage">80%</span>
-                </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-css3 skills__icon'></i>
-                        <span class="skills__name">CSS3</span>
-                    </div>
-                <div class="skills__bar skills__css">
-                        
-                </div>
-                <div>
-                    <span class="skills__percentage">70%</span>
-                </div>
-                </div>
-                <div class="skills__data">
-                    <div class="skills__names">
-                        <i class='bx bxl-javascript skills__icon' ></i>
-                        <span class="skills__name">JAVASCRIPT</span>
-                    </div>
-                <div class="skills__bar skills__js">      
-                </div>
-                <div>
-                    <span class="skills__percentage">50%</span>
-                </div>
-                </div>
-            </div>       
-            <div class="backskill">
-                <div class="backskills__data">
-                    <div class="backskills__names">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2tJREFUSEuVV01u2kAYfR9QgdNWQb1A0xMkOUHIDbhB0gVEXTXdmW4wm8hZNbsKkNpwgiYnSHKCkBOUGwSkFFMF/FUzHsPYM7bTkfKDNfP9vPe+N4bwX4sAcOGJzS4CgcHqgX6askIlNmnp7M9VgtySkpnEp4JlKVc/kVXhC6JatugdmJi4w6BBHGFOWM3O2m/GduSyq8ro2AzT6f9phkRdAu2ZlTJC4KqCsHfWfjvWdWBEigGUfze/VMxkx+5w3gBwA2AExg6Ag3VyLTKDp7Siff+TM3kJgYVsuP25B0LXbzskYJZFZIibiL/4ra2LTO1rkhFE2adEPe/0A49L6IJxy+B6Au70WUbPP3G8RDcWqk2OLaS4g/kxAPGjLdETHRhFM3rnJ45X2LE+7LJtxXen/9RkKu2CGBHj6cUgJjMBowfCBIT38sQSIxvnCQMROT//eKxXl9WbLPUaRaTHnNEjQoOVAHXB6UI2oHaHwSWYj7K6jCDJWcw9EDVAONBgGvltJ0GVYZnuIJgC2N6Ellyqj+r/PDMjHIJxCSioI5eB39qi9Hyvc3wdPO2FKN9bRFQ0lnFhD1hRE2X8Th8oIdw/a78ex88TuMkZZWkUtjUDMCY5Umlxy64mz+XFTWVVvbLqg3Dot5zbeAoyEuvwiph8HVT+Hlefq10im2WuC2lEcKaoieA+PG8566ITiSXUVL5Pz86SVrtllEbE2CsUl0qbHr8SVvviMrFAHSnGIq4HYvaYSr+yuU8iZOFp5redun4lRKrW3ModBEKRR9rhO2GViCwzf8k4FqiljW55GaqOsp/+fKzXnmsCksh5gDspKEtiiwVvCtsUcbd4tWhefHw33TgjYH31EcmdZfWYQ6qDeEJMO0zoGu2KmZVL2apsVnXMQAnhVI6QZe4T4rJfUoT4WlReoBBXybJuJwOO5EaDYxuJbj+Q9/G6M7PCayJMmXEE27VoCap1nHwV1fd2hvNTZvqW7liOVhRBmoM7CBjMSkjFOiyQKmLBTQDeNuZYODBDvOwJj29ghQ+5rz5qjDRxpThIvZS434MdVOARyysvVnxc9IzAt4TQ000ir6MXcWwLIMduUatH3eVdV7bTgtbCZdd6ku+sPUlpy68zKp+ZuKD4Tahc+9DC2+0u87uTDkTWfOd+gUt7cQrZfxIrkTEKZiMzAAAAAElFTkSuQmCC"/>
-                        <span class="skills__name">PYTHON</span>
-                    </div>
-                    <div class="backskills__bar skills__python">
-                            
-                    </div>
-                    <div>
-                        <span class="skills__percentage">60%</span>
-                    </div>
-                </div>
-                <div class="backskills__data">
-                    <div class="backskills__names">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA+VJREFUSEudV01yEzsQ/toOZU9YYLgA4QTkBiQ3CCfApiqTgg2TFXY2cVYZVrE37xG7Co9PwLvBm5yAK5gLgFNFMg6JLaql+ZFGGieFVmP9dKu7v+9rmVAeBEDok9aEeaJqWZ+3vgk8lY6HOOADwryXfvohJrT9Dte6A9taMPnZatx6b/jgzaNkOug8mxdpusd75njttnRR39MbJe0VxBmBWjy/gpjXBAWnB97UKpuRTNMTuUuqe1Tf3XGyA4FjADuGA7nMoKAYhJNw34vdwZQcV8Eo29b9N9lCHccgtLm4cn59NiMscRK+82bODKQGKsBFCCY/Ws275gchEBDQsiEoo3TaFhBzIhosNpLhsPNsbl/UQHUBt97nqz1Q7UwAWwo0loMLsHFZBOJLvZKnrUyIGQlxeHrw+D8Xa4257uh6ANAHZwkETmiF6PS9N8s5RUD3n2QLNbRBEgOuEYW+1ynTOb8pL3wcJVI+SpsuBbAX+ilwHDXmqd7o1/YK9RjAk7L30PeMtFk57I4TqRA6iIiwe+p7sR5lvqfk4Wh0tS1Q+1YWv3B/jWM94sKeGIb+ZqB+Ew4nP1qN2yaXQtGKEC82FsNh56kE0dG5jPorJD6KEfqbpGuxgWqWw49pxPmRJV5k1FCK1fifQNv5ukp7vHi0eN343TgmYhawpeyqin5rI+atXVnjHMkXoe/lgtEbXwdC0JlNLQMTl4CYAfQSgPomehnur4lYKlQKrtS4dJyLyeg6JtArFU0ljztYIkYdESAiLEl+6wHwNS3JdDnOIuyOEkas4mz16IDAdGNqTdNLTELf29WP2Kg26VSkmvl6nrQBTGyh0KAohYXmDC5WMAAzxoQFrjKpMx67wMVzvXESCQHZEnPKQUwXGzdB87Y5ANRaeZg8dkimAS7VeYaf/M1A19ve+dWeoBp3qzlqiLkjpdRijPB8BMJzXQ/WgEvdsVTjjBO7ufFyKKWUMY8F6qaAAHiwcmUR8K3TbvPadG7r5pGSTEs82BY7rtRqGfE4iSDwxjKrYNjHHaZGryUg+JI+hWjVJ8EtlMpiPw33N9sVylXkkGsIqg0E8LyCNXGKWGYkt0XzVVIc+k5iFai2aD4UVRyObnPI8vi7GYDAOp13m/tfIFJYLiEwCA+8vvuxUkJ1sSn9ynrtBvqcflOtKpSLMMUd+qoc5mtVfxq73y52P+bmsQMh+oVkmkUg4EIQ+pXoL9WsMtVWbdMcd0fXrF4sFE/SvFwCCELfi9bpqIuF6VwZ7EYrN84xir1lo807FvWbaPD2KUujc7hrDL1JVG25Jw4LbVV/c0z71juoOs4KyfrL+/4BgbDJNKIF4MEAAAAASUVORK5CYII="/>
-                        <span class="skills__name">C++</span>
-                    </div>
-                    <div class="backskills__bar skills__C">        
-                    </div>
-                    <div>
-                        <span class="skills__percentage">40%</span>
-                    </div>
-                </div>
-                <div class="backskills__data">
-                    <div class="backskills__names">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA9VJREFUSEudV0ty20YQfQ1SFkCpKlQuEOgE4RHoG/AI0oJg4o3hysJQNmE2IrQSvXKJTEW8QZQThDmB4RMYuYAFVykCWKLQqcZHGhAf0sGGwGDm9e/1a5DwdBEAfn6suVN37XZiAyg7RNWHCQQGJy/r4OvXk7OJvdxKOSbFcBGoBNsQnn39uTs9/TbYmi4luwL35Jh6sDETGxacq3B8MTLGhShLXhSLlBrOrl3qV+WQGKYYi8mPhr9r1AXDux5K96U8eP37bVdf6zcXltHPIy7VuAK4QK7naDJyleqgrqdozixcELE3GXamBfx6Xj2hFslXync16ezr267xoF8ygdyhcSJosia/09OjICd0XanL5GpszvSl8z40ucV/ENFHMSrPaLENoht3aCx3IWZtjevs/zy76z1C+4sIf7rDzokzCyXak2gvGiSRVjG1xGApWc2laod678xCH2DPtQ4GZ1d3AyYau1antwuOSplmVm+ELdHGaH3AGsfuK8N3ZuESjKU7MsaNhmtZXQqvaidgS+s86LfuyJCOEUYvpafcofFyi14kY2CTt1vLoqbImd1PiXk5GR3cnM3vbWa6BOPXJGq1hbbofK1ylfigqNvbebiI2pH97vQoeDsPfTB81zL6ubDsOuUqy1PXEgKapHytD1zLWKRRw7ywOnZ5qKpTriHVzx4Uq+Fc3Q1khYj9iXXoiQERC4nYmd/bYXu1UFvp7OpfYXufiPzJ0MgUrSxExYiz2iQ6fJ2QyWPwrQay842iVpSPXFlkNlkjk+L4o9Q+3yetp+FxcD469DbneqrVDURw3t+baJNJ4B7H1C34TZBpJODBuXXoqTWWjOgPuh/tRWZBWBSuFFldUVwB2V/t/3LxQ+dNFekS3Y70bj4WU6P7Y4A84UEViWpYXSRFBrQASBTqk6qKMbhHwD9guoleRFM90rtooY9HLN2G+VweEhW6utkezjzsYw2/CbhOyVSnt+1J3qdM1V7HpE1bHCfDQNhNDJM1Nlft1btLdUioqlMRTKOAZDP3+4ll/C29azzun4BpwIQeGN8A+AKCB2YvV7OtUeTqViUUGSMv5esmV6gC8ysOPS+ldyIs8lVS2qrIasnJbLBL45ssKIwlaRQwa4GGOGub7FiSapjJE/MRmAJoHETt1UJf671VO/LyEqjO1XzQF4vy02+fv9tj/fiJGHHcZY2CVATTaj/Q6tOLWDdFTAA6ZuKuBl6cWwdFR/M+btJk1XzCZIaZaY18DIjymIhhiv1kXcNS47KYfEUfK/JS9XeqscZFM5szOIcrsLpKlbay9H9u+A+JgO00SMAwEgAAAABJRU5ErkJggg=="/>
-                        <span class="skills__name">JAVA</span>
-                    </div>
-                    <div class="backskills__bar skills__java">       
-                    </div>
-                    <div>
-                        <span class="skills__percentage">35%</span>
-                    </div>
-                </div>
-            </div>  
-        </div>
+    </section>
 </body>
 </html>
+    
