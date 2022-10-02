@@ -1,2 +1,5 @@
 # Personal-Portfolio
-Responsive site for Mobile and Pc screens. Not responsive for Ipad and Tab screens.(will do it later)
+Responsive site for Mobile and Pc screens. 
+Tech-Stack used to create the static website is :
+1. HTML
+2. CSS
